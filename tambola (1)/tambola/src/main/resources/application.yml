@@ -1,0 +1,17 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: tambola
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.MysqlDataSource
+    url: jdbc:mysql://localhost:3306/tambola
+    username: root
+    password: root
